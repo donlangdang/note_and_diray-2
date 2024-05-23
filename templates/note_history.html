@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Note History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th>Notes</th>
+                <th>Date Time</th>
+                <th>Delete Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hang in row %}
+                <tr>
+                    <td>{{ hang["note"] }}</td>
+                    <td>{{ hang["day_time"] }}</td>
+                    <td>
+                        <form action="/delete/{{hang['note_id']}}" method="post">
+                            <button class="btn bg-primary" type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

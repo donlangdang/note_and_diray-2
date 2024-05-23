@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h1>{{day_time}}</h1>
+    <div class="form-floating">
+        <form action="/mynote" method="post">
+            <textarea class="form-control bg-primary-subtle" placeholder="Leave Diary Here" id="floatingTextarea2" name="note" style="height: 150px"></textarea>
+            <button class="btn bg-primary-subtle button_style" type="submit">Save My Note</button>
+        </form>      
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Dairy History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-primary">
+        <thead>
+            <tr>
+                <th>Diary</th>
+                <th>Date Time</th>
+                <th>For You</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for hang in row %}
+                <tr>
+                    <td>{{ hang["text"] }}</td>
+                    <td>{{ hang["day_time"] }}</td>
+                    <td>{{ hang["for"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

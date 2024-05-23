@@ -1,0 +1,14 @@
+* {
+    color: black !important;
+}
+h1 {
+    border-bottom: solid;
+    border-width: 2px;
+    border-bottom-color: black;
+}
+.button_style {
+    margin-top: 5px;
+}
+.table {
+    color: #cfe2ff !important;
+}
