@@ -10,7 +10,7 @@ from cs50 import SQL
 app = Flask(__name__)
 
 # Configure session to use filesystem (instead of signed cookies)
-app.secret_key = "xin loi moi nguoi luc do minh tre trau qua..."
+app.secret_key = "xin loi moi nguoi luc do minh tre trau qua"
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
